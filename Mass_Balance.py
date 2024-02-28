@@ -8,7 +8,7 @@ Delfzijl_production_rate = Delfzijl_production_rate / 24 # ton/hour
 ethylamine_yield = 0.9 # kg/kg
 production_rate_ethylamine = Delfzijl_production_rate / ethylamine_yield # ton/hour
 production_rate_ethylamine_copy = production_rate_ethylamine
-print(f'{production_rate_ethylamine} ton ethylamine/hour')
+# print(f'{production_rate_ethylamine} ton ethylamine/hour')
 
 # Molecular weights
 mw_ethylamine = 45.0837 # g/mol
@@ -22,7 +22,7 @@ production_rate_ethylamine = production_rate_ethylamine * 1000 # g/hour
 production_rate_ethylamine = production_rate_ethylamine / mw_ethylamine # mol/hour
 
 print('Theoretical production rate in mol/hour:')
-print(f'{production_rate_ethylamine} mol ethylamine/hour')
+print(f'{production_rate_ethylamine} mol ethylamine/hour \n')
 
 
 # C2H5OH + NH3 -> C2H5NH2 + H2O
@@ -42,9 +42,11 @@ production_rate_ammonia = production_rate_ammonia * mw_ammonia # g/hour
 production_rate_ammonia = production_rate_ammonia / 1000 # kg/hour
 production_rate_ammonia = production_rate_ammonia / 1000 # ton/hour
 
+print('Flow rates in ton/hr')
+print(f'{production_rate_ethylamine_copy} ton ethylamine/hour')
 print(f'{production_rate_water} ton water/hour')
 print(f'{production_rate_ethanol} ton ethanol/hour')
-print(f'{production_rate_ammonia} ton ammonia/hour')
+print(f'{production_rate_ammonia} ton ammonia/hour \n')
 
 print('Check the mass balance:')
 print("water + ethylamine")
